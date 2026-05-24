@@ -1,115 +1,177 @@
 ---
 ---
 
-@string{aps = {American Physical Society,}}
-
-@book{einstein1920relativity,
-  title     = {Relativity: the Special and General Theory},
-  author    = {Einstein, Albert},
-  year      = {1920},
-  publisher = {Methuen & Co Ltd},
-  html      = {relativity.html}
+@inproceedings{10.1145/3725843.3756131,
+author = {Miftah, Samit Shahnawaz and Srivastava, Amisha and Kim, Hyunmin and Wei, Shiyi and Basu, Kanad},
+title = {SymbFuzz: Symbolic Execution Guided Hardware Fuzzing},
+year = {2025},
+isbn = {9798400715730},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3725843.3756131},
+doi = {10.1145/3725843.3756131},
+abstract = {Modern hardware incorporates reusable designs to reduce cost and time to market, inadvertently increasing exposure to security vulnerabilities. While formal verification and simulation-based approaches have been traditionally utilized to mitigate these vulnerabilities, formal techniques are hindered by scalability issues, while conventional simulation methods frequently overlook critical edge cases. Fuzzing, as a simulation-based strategy, has demonstrated considerable promise in enhancing the security of both software and hardware; however, it is impeded by challenges such as limited input coverage, difficulties in traversing branching paths, and the complexity of managing circuit parameters, in addition to the limited adaptability of existing hardware fuzzing techniques within industrial workflows. To address these limitations, we propose SymbFuzz, an innovative hybrid hardware fuzzing methodology that leverages symbolic execution to achieve superior coverage. SymbFuzz is the first hardware fuzzing technique to be implemented on the industry-standard Universal Verification Methodology (UVM), facilitating seamless integration into commercial hardware verification flows. SymbFuzz was evaluated on a diverse set of processor RTLs, including OpenTitan (Ibex), CVA6, Rocket-Core, and Mor1kx. These designs span a range of processor architectures and complexities. SymbFuzz detected all bugs previously found by existing fuzzers and additionally uncovered 14 new bugs, including a vulnerability in OpenTitan, reported in the CWE 2025 database. It also achieved up to 6.8 \texttimes{} faster convergence compared to traditional UVM random testing and over 2 \texttimes{} 104 additional functional coverage points compared to state-of-the-art fuzzers, demonstrating its effectiveness in improving RTL validation across varied processor architectures.},
+booktitle = {Proceedings of the 58th IEEE/ACM International Symposium on Microarchitecture},
+pages = {1477–1490},
+numpages = {14},
+keywords = {Hardware Fuzzing, Hardware Security, Security Vulnerabilities, Processor Architecture.},
+location = {
+},
+series = {MICRO '25}
 }
 
-@book{einstein1956investigations,
-  bibtex_show = {true},
-  title       = {Investigations on the Theory of the Brownian Movement},
-  author      = {Einstein, Albert},
-  year        = {1956},
-  publisher   = {Courier Corporation},
-  preview     = {brownian-motion.gif}
+@INPROCEEDINGS{11133216,
+  author={Miftah, Samit Shahnawaz and Kim, Hyunmin and Basu, Kanad},
+  booktitle={2025 62nd ACM/IEEE Design Automation Conference (DAC)}, 
+  title={InterConFuzz: A Fuzzing-based Comprehensive NoC Verification Framework}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-7},
+  abstract={Security verification of Network-on-Chip (NoC) systems is essential due to their intricate and high-concurrency structures. Traditional methods often fail to cover all scenarios or scale effectively, leading to prolonged verification and overlooked vulnerabilities. Our proposed solution, InterConFuzz, a hybrid hardware fuzzing technique, uses symbolic execution for extensive coverage. Developed on Universal Verification Methodology (UVM), InterConFuzz discovered five security flaws in the NoC architecture of the OpenTitan SoC-surpassing existing techniques by three-while reducing memory and computational needs by 24.4% and 29.5%, respectively. Furthermore, InterConFuzz furnished comparable functional coverage compared to existing NoC fuzzing approaches, proving its efficiency and robustness.},
+  keywords={Industries;Design automation;Navigation;Hardware security;Computer bugs;Memory management;Network-on-chip;Fuzzing;Robustness;Security;Hardware Security;Network-on-Chip;Security Verification;Fuzzing},
+  doi={10.1109/DAC63849.2025.11133216},
+  ISSN={},
+  month={June},}
+
+@inproceedings{10.1145/3649476.3660378,
+author = {Miftah, Samit Shahnawaz and Srivastava, Amisha and Kim, Hyunmin and Basu, Kanad},
+title = {Assert-O: Context-based Assertion Optimization using LLMs},
+year = {2024},
+isbn = {9798400706059},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3649476.3660378},
+doi = {10.1145/3649476.3660378},
+abstract = {Modern computing relies on System-on-Chips (SoCs), integrating IP cores for complex functions. However, this integration introduces vulnerabilities, necessitating rigorous hardware security validation. The effectiveness of this validation depends on the security properties embedded in the SoC. Recent studies explore large language models (LLMs) for generating security properties, but these may not be directly optimized for validation. Manual intervention remains necessary to reduce their number. Security validation methods that rely on human expertise are not scalable as they are time-intensive and prone to human error. In order to address these issues, we introduce Assert-O, an automated framework designed to derive security properties from SoC documentation and optimize the generated properties. It also ranks the properties based on the security vulnerabilities they are associated with, thereby streamlining the validation process. Our method leverages hardware documentation to initially create security properties, which are subsequently consolidated and prioritized based on their level of criticality. This approach serves to expedite the validation procedure. Assert-O is trained on documentation of six IPs from OpenTitan. To evaluate our proposed method, Assert-O was assessed on five other modules from OpenTitan. Assert-O was able to generate 183 properties, which was further optimized to reduce them to 138 properties. Subsequently, these properties were ranked based on their impact on the security of the overall system.},
+booktitle = {Proceedings of the Great Lakes Symposium on VLSI 2024},
+pages = {233–239},
+numpages = {7},
+keywords = {Hardware Security, Hardware Verification, Large Language Models},
+location = {Clearwater, FL, USA},
+series = {GLSVLSI '24}
 }
 
-@article{einstein1950meaning,
-  abbr        = {AJP},
-  bibtex_show = {true},
-  title       = {The meaning of relativity},
-  author      = {Einstein, Albert and Taub, AH},
-  journal     = {American Journal of Physics},
-  volume      = {18},
-  number      = {6},
-  pages       = {403--404},
-  year        = {1950},
-  publisher   = {American Association of Physics Teachers}
+@ARTICLE{10472314,
+  author={Miftah, Samit S. and Raj, Kshitij and Meng, Xingyu and Ray, Sandip and Basu, Kanad},
+  journal={IEEE Transactions on Computer-Aided Design of Integrated Circuits and Systems}, 
+  title={System-on-Chip Information Flow Validation Under Asynchronous Resets}, 
+  year={2024},
+  volume={43},
+  number={9},
+  pages={2825-2838},
+  abstract={Modern system-on-chip (SoC) designs comprise hundreds of individual IP blocks, each with its custom implementation of reset signals in most cases. The asynchronous nature of these resets while crossing different reset domains makes the SoC prone to various vulnerabilities if not implemented and validated thoroughly. A key aspect in validating system functionality is to ensure the functionality under reset is verified. Traditional simulation-based validation techniques often become a bottleneck in complex SoC designs due to the large control path of these designs. We propose SoC security checker under asynchronous resets (SoCCAR), a SoC validation framework that addresses this problem. SoCCAR leverages control flow graphs (CFGs) of the design to extract the control flow associated with property violations caused by reset domain crossings due to asynchronous resets. SoCCAR efficiently tracks the chain of events leading to the payload without suffering from state space explosion, a common challenge in complex designs. We test the efficacy of SoCCAR in detecting such vulnerabilities by developing multiple SoC benchmarks, each embedded with custom vulnerability originating from reset implementations across different domains. These vulnerabilities reflect practical design complexity and correspond to security violations encountered in practice as a result of multiple asynchronous resets. SoCCAR successfully detected all violations with minimal computation overhead and runtime, making it a viable approach for detecting such violations in complex SoC designs.},
+  keywords={Security;Complexity theory;Scalability;Registers;Random access memory;Clocks;Aerospace electronics;Asynchronous reset;hardware security;multiple reset domain;RTL verification},
+  doi={10.1109/TCAD.2024.3376596},
+  ISSN={1937-4151},
+  month={Sep.},}
+
+
+@INPROCEEDINGS{10545408,
+  author={Miftah, Samit S. and Kundu, Shamik and Mordahl, Austin and Wei, Shiyi and Basu, Kanad},
+  booktitle={2024 IEEE International Symposium on Hardware Oriented Security and Trust (HOST)}, 
+  title={RTL-Spec: RTL Spectrum Analysis for Security Bug Localization}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={171-181},
+  abstract={Modern System-on-Chip (SoC) designs are integrated with intellectual property (IPs) cores to achieve complex functionalities. While this integration significantly improves the computing power of SoCs, it also leads to an increase in verification complexity pertaining to the security of the SoC design. Existing SoC verification techniques do not offer localization capability to pinpoint the root causes of security vulnerabilities in the register transfer level (RTL) code. This leads to significant delay, incurred due to SoC debugging. Fault localization techniques, such as spectrum-based methodologies, are used predominantly in software validation and testing to debug and localize bugs in programs. However, due to the absence of any such techniques that correlate faulty output with individual lines of RTL code, approaches that can detect vulnerabilities in the hardware have not yet been adopted. In order to circumvent this, in this paper, we, for the first time, propose RTL-Spec, a RTL level security vulnerability localization framework that aims to pinpoint buggy lines in the RTL code to ensure the security of the SoC design in its pre-silicon phase. RTL-Spec achieves this by establishing a correlation between the effects of input patterns in simulation runs and the corresponding statements in the RTL code. The subsequent stage employs a spectrum-based localization technique to identify buggy statements in RTL that might cause vulnerabilities. The efficacy of RTL-Spec was assessed using a buggy version of PULPissimo SoC, utilized in the “Hack @DAC2018” competition. RTL-Spec accurately identified the origin of all 14 vulnerabilities in the RTL code and achieved a precision of 100 % in 10 out of the 14 cases.},
+  keywords={Location awareness;Codes;Computer bugs;Debugging;Hardware;Software;System-on-chip;Security Verification;Bug Localization;Hard-ware Debugging;Hardware Security},
+  doi={10.1109/HOST55342.2024.10545408},
+  ISSN={2765-8406},
+  month={May},}
+
+
+  @ARTICLE{11402930,
+  author={Srivastava, Amisha and Miftah, Samit S. and Kim, Hyunmin and Pal, Debjit and Basu, Kanad},
+  journal={IEEE Transactions on Very Large Scale Integration (VLSI) Systems}, 
+  title={PoSyn: Secure Power Side-Channel Aware Synthesis}, 
+  year={2026},
+  volume={34},
+  number={4},
+  pages={1355-1368},
+  abstract={Power side-channel (PSC) attacks exploit power consumption patterns to extract sensitive information, posing risks to cryptographic operations crucial for secure systems. Traditional countermeasures, such as masking, face challenges like complex synthesis integration, high area overhead, and vulnerability to optimization removal during logic synthesis. To address these issues, we introduce proposed side-channel aware synthesis (PoSyn), a novel logic synthesis framework designed to enhance cryptographic hardware’s resistance against PSC attacks. Our approach focuses on the optimal bipartite mapping of vulnerable register transfer level (RTL) components to standard cells from the technology library to minimize PSC leakage. By employing a cost function that integrates key characteristics from the RTL design and the standard cell library, we strategically modify the mapping criteria during the conversion of RTL designs into standard cell netlists without altering the design functionality. Furthermore, PoSyn is theoretically shown to minimize mutual information leakage, further reinforcing its security against PSC vulnerabilities. PoSyn is evaluated on a variety of cryptographic hardware, including AES, RSA, PRESENT, and postquantum cryptography algorithms like Saber and CRYSTALS-Kyber across 65-, 45-, and 15-nm nodes. Our experimental results demonstrate a significant reduction of success rates for differential power analysis (DPA) and correlation power analysis (CPA) attacks, as low as 3% and 6%, respectively. Furthermore, test vector leakage assessment (TVLA) confirms that the synthesized netlists exhibit negligible leakage. Moreover, compared to traditional countermeasures such as masking and shuffling, PoSyn achieves notably lowers the success rates, achieving a reduction by up to 72%, while simultaneously enhancing area efficiency by as much as  $3.79\times $ . These results highlight the effectiveness of PoSyn in securing cryptographic hardware with minimal impact on area and performance.},
+  keywords={Register transfer level;Cryptography;Security;Logic;Standards;Power demand;Logic gates;Libraries;Hardware;Resilience;Cryptography;logic synthesis;power side-channel (PSC) analysis;side-channel attacks},
+  doi={10.1109/TVLSI.2026.3662289},
+  ISSN={1557-9999},
+  month={April},}
+
+
+@INPROCEEDINGS{11022798,
+  author={Menon, Anand and Miftah, Samit Shahnawaz and Srivastava, Amisha and Kundu, Shamik and Kundu, Souvik and Raha, Arnab and Banerjee, Suvadeep and Mathaikutty, Deepak and Basu, Kanad},
+  booktitle={2025 IEEE 43rd VLSI Test Symposium (VTS)}, 
+  title={OpenAssert: Towards Secure Assertion Generation using Large Language Models}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-5},
+  abstract={Assertions are critical components used in hardware verification, ensuring robust functionality, fortifying design security, and providing essential verification features. Traditional hardware assertion methods are not automated, complicate security audits, and require effort, causing prolonged development cycles. Recent studies have highlighted the potential of commercial Large Language Models (LLMs) to generate security-focused assertions by leveraging textual data from design specifications. However, reliance on proprietary models like GPT-4 severely jeopardizes IP privacy and data confidentiality, undermining transparency and accountability in data handling practices. In this paper, we address secure hardware assertion generation by proposing a practical approach to significantly enhance the feasibility of open-source LLMs. Our proposed method, OpenAssert, involves fine-tuning existing models to be utilized locally at the user’s end without compromising confidentiality. Additionally, we employ Retrieval Augmentation Generation to refine these models, mitigating hallucinations and security-related errors. OpenAssert demonstrates improvements, achieving up to a 44% increase in rouge-1 score, a 49% improvement in cosine similarity, and a 43.4% reduction in word error rate for security-critical designs compared to open-source models.},
+  keywords={Data privacy;Error analysis;Databases;Large language models;Very large scale integration;Hardware;Data models;Security;IP networks;Context modeling;LLMs;Assertion;Verification},
+  doi={10.1109/VTS65138.2025.11022798},
+  ISSN={2375-1053},
+  month={April},}
+
+
+@article{10.1145/3764934,
+author = {Menon, Anand and Miftah, Samit and Kundu, Shamik and Kundu, Souvik and Srivastava, Amisha and Raha, Arnab and Sonnenschien, Gaberiel and Banerjee, Suvadeep and Mathaikutty, Deepak and Basu, Kanad},
+title = {Enhancing Large Language Models for Hardware Verification: A Novel SystemVerilog Assertion Dataset},
+year = {2025},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+issn = {1084-4309},
+url = {https://doi.org/10.1145/3764934},
+doi = {10.1145/3764934},
+abstract = {Hardware verification is crucial in modern SoC design, consuming around 70\% of development time. SystemVerilog assertions ensure correct functionality. However, existing industrial practices rely on manual efforts for assertion generation, which becomes increasingly untenable as hardware systems become complex. Recent research shows that Large Language Models (LLMs) can automate this process. However, proprietary SOTA models like GPT-4o often generate inaccurate assertions and require expensive licenses, while smaller open-source LLMs need fine-tuning to manage HDL code complexities. To address these issues, we introduce VERT, an open-source dataset designed to enhance SystemVerilog assertion generation using LLMs. VERT enables researchers in academia and industry to fine-tune open-source models, outperforming larger proprietary ones in both accuracy and efficiency while ensuring data privacy through local fine-tuning and eliminating costly licenses. The dataset is curated by systematically augmenting variables from open-source HDL repositories to generate synthetic code snippets paired with corresponding assertions. Experimental results demonstrate that fine-tuned models like Deepseek Coder 6.7B and Llama 3.1 8B outperform GPT-4o, achieving up to 96.88\% improvement over base models and 24.14\% over GPT-4o on platforms including OpenTitan, CVA6, OpenPiton, and Pulpissimo. VERT is available at https://github.com/AnandMenon12/VERT.},
+note = {Just Accepted},
+journal = {ACM Trans. Des. Autom. Electron. Syst.},
+month = aug,
+keywords = {Hardware Verification, Large Language Models, SystemVerilog}
 }
 
-@article{PhysRev.47.777,
-  abbr              = {PhysRev},
-  title             = {Can Quantum-Mechanical Description of Physical Reality Be Considered Complete?},
-  author            = {Einstein*†, A. and Podolsky*, B. and Rosen*, N.},
-  abstract          = {In a complete theory there is an element corresponding to each element of reality. A sufficient condition for the reality of a physical quantity is the possibility of predicting it with certainty, without disturbing the system. In quantum mechanics in the case of two physical quantities described by non-commuting operators, the knowledge of one precludes the knowledge of the other. Then either (1) the description of reality given by the wave function in quantum mechanics is not complete or (2) these two quantities cannot have simultaneous reality. Consideration of the problem of making predictions concerning a system on the basis of measurements made on another system that had previously interacted with it leads to the result that if (1) is false then (2) is also false. One is thus led to conclude that the description of reality as given by a wave function is not complete.},
-  journal           = {Phys. Rev.},
-  location          = {New Jersey},
-  volume            = {47},
-  issue             = {10},
-  pages             = {777--780},
-  numpages          = {0},
-  year              = {1935},
-  month             = {May},
-  publisher         = aps,
-  doi               = {10.1103/PhysRev.47.777},
-  url               = {https://link.aps.org/doi/10.1103/PhysRev.47.777},
-  html              = {https://journals.aps.org/pr/abstract/10.1103/PhysRev.47.777},
-  pdf               = {example_pdf.pdf},
-  altmetric         = {248277},
-  dimensions        = {true},
-  google_scholar_id = {qyhmnyLat1gC},
-  video             = {https://www.youtube-nocookie.com/embed/aqz-KE-bpKQ},
-  additional_info   = {. *More Information* can be [found here](https://github.com/alshedivat/al-folio/)},
-  annotation        = {* Example use of superscripts<br>† Albert Einstein},
-  selected          = {true},
-  inspirehep_id     = {3255}
+
+@INPROCEEDINGS{8868988,
+  author={Abir, Md. Towsif and Rahman, Lamiya and Miftah, Samit Shahnawaz and Sarker, Sudipta and Al Imran, Md. Ibrahim and Shafiqul Islam, Md.},
+  booktitle={2019 IEEE International Conference on Electrical, Computer and Communication Technologies (ICECCT)}, 
+  title={Image Encryption and Decryption using Enigma Algorithm}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={1-5},
+  abstract={The main objective of this paper is to present a more secured and computationally efficient procedureof encrypting and decrypting images using the enigma algorithm in comparison to the existing methods. Available literature on image encryptions and descriptionsare not highly secured in every case.To achieve more secured image processing for highly advanced technologies, a proposed algorithm can be theprocess used in enigma machine for image encryption and decryption. Enigma machine is piece of spook hardware that was used frequently during the World War II by the Germans. This paper describes the detailed algorithm along with proper demonstration of several essential components present in an enigma machine that is required for image security. Each pixel in a colorful picture can be represented by RGB (Red, Green, Blue) value. The range of RGB values is 0 to 255 that states the red, green and blue intensity of a particular picture.These RGB values are accessed one by one and changed into another by various steps and hence it is not possible to track the original RGB value. In order to retrieve the original image, the receiver needs to know the setting of the enigma. To compare the decrypted image with the original one,these two images are subtracted and their results are also discussed in this paper.},
+  keywords={Encryption;Rotors;Breadboard;Mathematical model;Military communication;encryption;decryption;algorithm;enigma;pixel},
+  doi={10.1109/ICECCT.2019.8868988},
+  ISSN={},
+  month={Feb},}
+
+
+@INPROCEEDINGS{8869417,
+  author={Miftah, Samit Shahnawaz and Towsif Abir, Md. and Hossain, Md. Sazzad and Chakrabartty, Arjan and Islam, Md. Shafiqul},
+  booktitle={2019 IEEE International Conference on Electrical, Computer and Communication Technologies (ICECCT)}, 
+  title={Image Processing Method for Measurement of Refractive Index}, 
+  year={2019},
+  volume={},
+  number={},
+  pages={1-5},
+  abstract={This paperproposes a method for determining the refractive index of a material. The proposed method is based on image processing. The method uses twoimagestaken from an experimental setup. The first one is of a laser beam focused on a plane withthe presence of the concerned material and the second one without it.The refractive index is then determined by processing those images with MATLAB. This method is quicker and cheaper for the determination of the refractive index within a range of ±3.5% of permissible error.},
+  keywords={Refractive index;Liquids;Slabs;Measurement by laser beam;Glass;Pollution measurement;Laser beams;Laser;Image Processing;Refractive Index;Refractometry},
+  doi={10.1109/ICECCT.2019.8869417},
+  ISSN={},
+  month={Feb},}
+
+
+@incollection{miftahsecurity,
+  title={Security Verification for Next-Generation SoCs},
+  author={Miftah, Samit Shahnawaz and Srivastava, Amisha and Makris, Yiorgos and Basu, Kanad},
+  booktitle={Advances in Hardware Design for Security and Trust},
+  editor={Vemuri, Ranga and Emmert, John},
+  edition={1st},
+  chapter={12},
+  pages={267--301},
+  abstract={Modern system-on-chip (SoC) designs are gaining traction in computing system designs due to their ability to provide efficient, high-performance computing with minimal latency and power consumption. Furthermore, they streamline design processes and facilitate the integration of reusable intellectual properties (IPs). However, the integration of third-party IPs (3PIPs) in SoCs can inadvertently introduce security vulnerabilities exploitable by adversaries. The next generation of SoC design is moving towards a chiplet-based architecture that allows further reusability of IPs and enables heterogeneous integration of 3PIPs. This exacerbates the security risks in the SoC architectures. As the size and complexity of these next-generation SoCs grow, existing formal-based approaches struggle to scale for adequate security verification. To address this challenge, both industry and academia are exploring new verification methodologies such as concolic testing, fuzzing, and information flow tracking to meet the security needs of future SoCs. These approaches aim for efficient security verification by reducing search space, tracking specific data paths, or using feedback mechanisms while dynamically verifying the design under verification (DUV). This chapter explores the security challenges posed by next-generation SoC architectures, presents recent advancements aimed at overcoming these challenges, and outlines the future trajectory of security verification in this domain.},
+  publisher={CRC Press},
+  address={Boca Raton, FL},
+  year={2025},
+  doi={10.1201/9781003510949},
+  isbn={9781003510949}
 }
 
-@article{einstein1905molekularkinetischen,
-  title     = {{\"U}ber die von der molekularkinetischen Theorie der W{\"a}rme geforderte Bewegung von in ruhenden Fl{\"u}ssigkeiten suspendierten Teilchen},
-  author    = {Einstein, A.},
-  journal   = {Annalen der physik},
-  volume    = {322},
-  number    = {8},
-  pages     = {549--560},
-  year      = {1905},
-  publisher = {Wiley Online Library}
-}
-
-@article{einstein1905movement,
-  abbr    = {Ann. Phys.},
-  title   = {Un the movement of small particles suspended in statiunary liquids required by the molecular-kinetic theory 0f heat},
-  author  = {Einstein, A.},
-  journal = {Ann. Phys.},
-  volume  = {17},
-  pages   = {549--560},
-  year    = {1905}
-}
-
-@article{einstein1905electrodynamics,
-  title  = {On the electrodynamics of moving bodies},
-  author = {Einstein, A.},
-  year   = {1905}
-}
-
-@article{einstein1905photoelectriceffect,
-  bibtex_show = {true},
-  abbr        = {Ann. Phys.},
-  title       = {{{\"U}ber einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt}},
-  author      = {Albert Einstein},
-  abstract    = {This is the abstract text.},
-  journal     = {Ann. Phys.},
-  volume      = {322},
-  number      = {6},
-  pages       = {132--148},
-  year        = {1905},
-  doi         = {10.1002/andp.19053220607},
-  award       = {Albert Einstein receveid the **Nobel Prize in Physics** 1921 *for his services to Theoretical Physics, and especially for his discovery of the law of the photoelectric effect*},
-  award_name  = {Nobel Prize}
-}
-
-@book{przibram1967letters,
-  bibtex_show = {true},
-  title       = {Letters on wave mechanics},
-  author      = {Einstein, Albert and Schrödinger, Erwin and Planck, Max and Lorentz, Hendrik Antoon and Przibram, Karl},
-  year        = {1967},
-  publisher   = {Vision},
-  preview     = {wave-mechanics.gif},
-  abbr        = {Vision}
-}
