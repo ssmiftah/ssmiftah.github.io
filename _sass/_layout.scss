@@ -33,6 +33,35 @@ body.sticky-bottom-footer {
   max-width: v.$max-content-width;
 }
 
+// Wider content + larger text on 2K / 4K displays.
+// Everything else (Bootstrap, al-folio components) is sized in rem and scales with html font-size.
+@media (min-width: 1600px) {
+  html {
+    font-size: 17px;
+  }
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 2200px) {
+  html {
+    font-size: 19px;
+  }
+  .container {
+    max-width: 1500px;
+  }
+}
+
+@media (min-width: 3000px) {
+  html {
+    font-size: 22px;
+  }
+  .container {
+    max-width: 1800px;
+  }
+}
+
 // Profile
 .profile {
   img {

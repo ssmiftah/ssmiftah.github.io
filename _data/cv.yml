@@ -111,13 +111,29 @@ cv:
     #       - "Men of the year 2014 by Time magazine"
 
     Awards:
-      - title: Second Prize, Hack@DAC 2024
+      - title: Second Prize, Hack@DAC 2025
         authors:
           - "Hack@DAC 2025"
-        date: 2024-06-01
+        date: 2025-06-01
         awarder: Hack@DAC 2025
         url: https://hackthesilicon.com/dac25/
-        summary: Awarded for achieving second place in the Hack@DAC 2024 hardware security competition, demonstrating exceptional skills in finding and exploiting vulnerabilities in hardware systems.
+        summary: Awarded for achieving second place in the Hack@DAC 2025 hardware security competition, demonstrating exceptional skills in finding and exploiting vulnerabilities in hardware systems.
+
+      - title: Third Prize, CSAW AI Hardware Attack Challenge 2025
+        authors:
+          - "CSAW AI Hardware Attack Challenge 2025"
+        date: 2025-06-01
+        awarder: CSAW AI Hardware Attack Challenge 2025
+        url: https://www.csaw.io/ai-hardware-attack-challenge
+        summary: Awarded for achieving third place in the CSAW AI Hardware Attack Challenge 2025, demonstrating exceptional skills in finding and exploiting vulnerabilities in hardware systems.
+
+      - title: Third Prize, Hack@DAC 2024
+        authors:
+          - "Hack@DAC 2024"
+        date: 2024-06-01
+        awarder: Hack@DAC 2024
+        url: https://hackthesilicon.com/dac24/
+        summary: Awarded for achieving third place in the Hack@DAC 2024 hardware security competition, demonstrating exceptional skills in finding and exploiting vulnerabilities in hardware systems.
 
       # - title: Max Planck Medal
       #   authors:
@@ -127,72 +143,91 @@ cv:
       #   summary: Awarded for outstanding scientific achievement
 
     Publications:
-      - title: Zur Elektrodynamik bewegter Körper
+      - title: "SymbFuzz: Symbolic Execution Guided Hardware Fuzzing"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-06-30
-        url: https://en.wikisource.org/wiki/Translation:On_the_Electrodynamics_of_Moving_Bodies
-        summary: It concerned an interpretation of the Michelson–Morley experiment and the properties of light and time. Special relativity incorporates the principle that the speed of light is the same for all inertial observers regardless of the state of motion of the source.
+          - Samit Shahnawaz Miftah, Amisha Srivastava, Hyunmin Kim, Shiyi Wei, and Kanad Basu
+        publisher: IEEE/ACM International Symposium on Microarchitecture
+        releaseDate: 2025
+        url: https://doi.org/10.1145/3725843.3756131
+        summary: This paper presents SymbFuzz, a novel hardware fuzzing approach that leverages symbolic execution to improve the efficiency and effectiveness of vulnerability detection in hardware systems.
 
-      - title: Über einen die Erzeugung und Verwandlung des Lichtes betreffenden heuristischen Gesichtspunkt
+      - title: "InterConFuzz: A Fuzzing-based Comprehensive NoC Verification Framework"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1905-03-18
-        url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
-        summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
+          - Samit Shahnawaz Miftah, Hyunmin Kim, and Kanad Basu
+        publisher: ACM/IEEE Design Automation Conference (DAC)
+        releaseDate: 2025
+        url: https://doi.org/10.1109/DAC63849.2025.11133216
+        summary: This paper presents InterConFuzz, a novel fuzzing-based framework for comprehensive Network-on-Chip (NoC) verification, leveraging symbolic execution to enhance coverage and detection of security vulnerabilities.
 
-      - title: Die Grundlage der allgemeinen Relativitätstheorie
+      - title: "Enhancing Large Language Models for Hardware Verification: A Novel SystemVerilog Assertion Dataset"
         authors:
-          - Albert Einstein
-        publisher: Annalen der Physik
-        releaseDate: 1916-03-20
-        url: https://de.wikisource.org/wiki/Die_Grundlage_der_allgemeinen_Relativitätstheorie
-        summary: The publication of the theory of general relativity made him internationally famous. He was professor of physics at the universities of Zurich (1909–1911) and Prague (1911–1912), before he returned to ETH Zurich (1912–1914).
+          - Anand Menon, Samit Miftah, Shamik Kundu, and Souvik Kundu, Amisha Srivastava, Arnab Raha, Gaberiel Sonnenschien, Suvadeep Banerjee, Deepak Mathaikutty, Kanad Basu
+        publisher: ACM Transactions on Design Automation of Electronic Systems (TODAES)
+        releaseDate: 2024
+        url: https://doi.org/10.1145/3764934
+        summary: This paper presents a novel approach to enhancing Large Language Models for hardware verification by introducing a comprehensive SystemVerilog assertion dataset.
 
     Skills:
-      - name: Physics
-        level: Master
-        icon: fa-solid fa-hashtag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+      - name: Programming Languages
+        icon: fa-solid fa-code
+        keywords: "Python, C/C++, TCL, SystemVerilog, Verilog, Chisel, VHDL"
+
+      - name: Tools
+        icon: fa-solid fa-toolbox
+        keywords: "<b>Xilinx</b> - Vivado, Vitis HLS; <b>Cadence</b> - Virtuoso, Genus, Innovas, Xcelium, JasperGold; <b>Synopsys</b> - VCS, Design vision, Spyglass Lint; <b>SymbiYosys</b>, <b>SMT-solver</b> (Microsoft z3-Solver)"
+
+      - name: Frameworks
+        icon: fa-solid fa-toolbox
+        keywords: "Universal Verification Methodology (UVM), Chipyard, Gem5, Linux, Git, LLM models (LangChain); Xilinx FPGA Boards, Raspberry Pi, Arduino"
 
     Languages:
-      - name: German
+      - name: Bengali
         summary: "Native speaker"
 
       - name: English
         summary: "Fluent"
 
     Interests:
-      - name: Physics
+      - name: Computer Architecture and Hardware Security
         icon: fa-solid fa-tag
-        keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
+        keywords: "Hardware Security, Hardware Verification, Computer Architecture, VLSI Design, Hardware Fuzzing, Formal Verification, AI-driven Design Automation"
 
-    Certificates:
-      - name: Machine Learning
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-location-dot
+    # Certificates:
+    #   - name: Machine Learning
+    #     date: 2018-01-01
+    #     issuer: Stanford University
+    #     icon: fa-solid fa-location-dot
 
-      - name: Quantum Computing
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-tag
+    #   - name: Quantum Computing
+    #     date: 2018-01-01
+    #     issuer: Stanford University
+    #     icon: fa-solid fa-tag
 
-      - name: Quantum Information
-        date: 2018-01-01
-        issuer: Stanford University
-        icon: fa-solid fa-envelope
+    #   - name: Quantum Information
+    #     date: 2018-01-01
+    #     issuer: Stanford University
+    #     icon: fa-solid fa-envelope
 
     Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+      - name: Using LLM Agents for SystemVerilog Assertion Generation
+        summary: This project explores the application of Large Language Model agents for generating SystemVerilog assertions, aiming to improve the efficiency and effectiveness of hardware verification processes.
         highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+          - Created a synthetic dataset of synchronous and asynchronous assertions to train language models. [published in TODAES'25]
+          - Fine-tuned open-source models (Llama 3.1 8B, DeepSeekCoder 6.7B) to generate assertions (for OpenTitan, CVA6, Pulpissimo). [published in VTS'25]
+          - Using the fine-tuned LLMs to spawn agents that would go through the design files and the documentation to understand the design structure 
+            and generate SystemVerilog assertions accordingly on AI accelerator architectures (NVDLA).
+          - Binding the generated assertion files to their corresponding design files.
+          - Calling verification tools used to check the correctness of the assertions.
+        # start_date: 2018-01-01
+        # end_date: 2018-01-01
+      - name: Automatic Program Repair
+        summary: This project focuses on developing techniques for automatic program repair, leveraging generative AI and formal methods to identify and fix bugs in software systems.
+        highlights:
+          - Once design faults are identified and localized using the fuzzing and localization tools, using LLM agents to repair the buggy designs.
+          - The agents are given context by the respective bug description from which the assertions were generated.
+          - A verification loop is implemented to verify the correctness of the design once the patch is applied.
+        # start_date: 2018-01-01
+        # end_date: 2018-01-01
 
     # References:
     #   - name: Professor John Doe
