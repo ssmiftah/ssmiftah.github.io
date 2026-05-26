@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://ssmiftah.github.io/sitemap.xml
