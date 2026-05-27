@@ -209,23 +209,26 @@ cv:
     #     icon: fa-solid fa-envelope
 
     Projects:
-      - name: Using LLM Agents for SystemVerilog Assertion Generation
+      - name: "SpecGuard: Token-Efficient LLM-Based SVA Generation"
         summary: This project explores the application of Large Language Model agents for generating SystemVerilog assertions, aiming to improve the efficiency and effectiveness of hardware verification processes.
         highlights:
-          - Created a synthetic dataset of synchronous and asynchronous assertions to train language models. [published in TODAES'25]
-          - Fine-tuned open-source models (Llama 3.1 8B, DeepSeekCoder 6.7B) to generate assertions (for OpenTitan, CVA6, Pulpissimo). [published in VTS'25]
-          - Using the fine-tuned LLMs to spawn agents that would go through the design files and the documentation to understand the design structure 
-            and generate SystemVerilog assertions accordingly on AI accelerator architectures (NVDLA).
-          - Binding the generated assertion files to their corresponding design files.
-          - Calling verification tools used to check the correctness of the assertions.
+          - "Challenge: LLM-based SVA generation collapses on large RTL due to token exhaustion, unstructured context, and frequent syntactic/semantic errors in generated assertions."
+          - "Developed SpecGuard – distills RTL into AST skeletons and facts cards so the model's budget goes to assertion formulation, not design comprehension; achieves up to 987× higher functional coverage and 97% lower tokens-per-covered-event vs. state-of-the-art on 11 NVDLA/Coral NPU designs."
+
         # start_date: 2018-01-01
         # end_date: 2018-01-01
-      - name: Automatic Program Repair
+      - name: "FlowFixer: Control-Flow-Based Automatic RTL Program Repair"
         summary: This project focuses on developing techniques for automatic program repair, leveraging generative AI and formal methods to identify and fix bugs in software systems.
         highlights:
-          - Once design faults are identified and localized using the fuzzing and localization tools, using LLM agents to repair the buggy designs.
-          - The agents are given context by the respective bug description from which the assertions were generated.
-          - A verification loop is implemented to verify the correctness of the design once the patch is applied.
+          - "Challenge: Hardware repair remains manual despite verification tools – localization heuristics misfire, rule-based tools cannot generalize, and naive LLM repair hallucinates without CFG-level context."
+          - "Developed FlowFixer – CFG/AST-driven bifurcated repair engine routes structural bugs to deterministic templates and complex flaws to a ReAct LLM agent; multi-tiered validation funnel with QoR scoring selects the minimal-area patch. Repairs 33% more bugs than RTL-Repair and 60% more than CirFix across 32 benchmarks."
+        # start_date: 2018-01-01
+        # end_date: 2018-01-01
+      - name: "CHoRD: Joint Scheduling and Data Placement for Chiplet-Based GPUs"
+        summary: This project investigates the optimization of scheduling and data placement in chiplet-based GPU architectures, aiming to enhance the performance of deep neural network inference by reducing inter-chiplet NUMA traffic.
+        highlights:
+          - "Challenge: Existing chiplet-GPU approaches optimize scheduling or placement independently, causing sustained inter-chiplet NUMA traffic that degrades DNN inference performance."
+          - "Mentoring a graduate student developing CHoRD – a compiler-assisted, profile-guided framework for joint kernel scheduling and data placement; achieves 2.94× geo-mean speedup over round-robin and 1.66× over placement-only baseline across 9 CNN/transformer workloads."
         # start_date: 2018-01-01
         # end_date: 2018-01-01
 
